@@ -1,0 +1,58 @@
+html, body {
+  margin:0;
+  padding:0;
+  height:100%; /* needed for container min-height */          
+  cursor:default; 
+  overflow:hidden;    
+  font-family     : arial,sans-serif;
+}
+
+.web {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgb(250,250,250);
+}
+
+.header {
+	//height: 50px;
+	background: black;
+	color: white;
+	position: relative;
+	text-align: center;
+}
+.header > div {
+	display: inline-block;
+	height: 50px;
+	padding: 0 50px;	
+	line-height: 50px;	
+	cursor: pointer;
+}
+.header > div:hover {
+	background: rgba(255,255,255,0.5);
+}
+.header div.nav-select {
+	background: rgba(255,255,255,0.3);	
+}
+
+.main-content {
+	position: relative;
+	height: calc(100% - 50px);
+	//background: purple;
+}
+
+.mask {
+	width: 100%;
+	height: calc(100% - 50px);
+	position: absolute;
+	cursor: wait;	
+	background: pink;
+	display: none;
+}
+
+.page {
+	position: relative;	
+	text-align: center;
+	height: 100%;
+	padding-top: 1px;
+}
