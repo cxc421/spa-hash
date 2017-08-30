@@ -4,7 +4,7 @@ web.p3 = (function(){
 	//----------BEGIN MODULE SCOPE VARIABLES ------------//
 	var configMap = {
 		showText: 'PAGE_3',
-		bkColor: 'green'
+		bkColor: '#7FFFD4'
 	};
 	//----------END MODULE SCOPE VARIABLES ------------//
 
