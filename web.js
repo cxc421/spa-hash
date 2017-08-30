@@ -112,7 +112,7 @@ var web = (function(){
 
 		NProgress.configure({ easing: 'ease', speed: 300 });
 		NProgress.start();
-		//NProgress.set(0.4);
+		NProgress.set(0.6);
 
 		loadScript(obj.script, function(success){
 
