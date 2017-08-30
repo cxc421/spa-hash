@@ -66,8 +66,10 @@ var web = (function(){
       	url: url,
 			  dataType: "script",
 			  success: function(){
-			  	alreadyLoad[url] = true;
-			  	callback(true);
+			  	//setTimeout(function(){
+				  	alreadyLoad[url] = true;
+				  	callback(true);
+			  	//}, 1000);
 			  },
 			  error: function () {
 			  	callback(false);
@@ -108,10 +110,12 @@ var web = (function(){
 		console.log('hash change');
 		console.log(hash);
 
+		NProgress.configure({ easing: 'ease', speed: 300 });
 		NProgress.start();
+		//NProgress.set(0.4);
 
 		loadScript(obj.script, function(success){
-			
+
 			NProgress.done();
 			if (success) {
 				console.log('OK');
