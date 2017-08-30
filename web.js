@@ -107,7 +107,12 @@ var web = (function(){
 
 		console.log('hash change');
 		console.log(hash);
+
+		NProgress.start();
+
 		loadScript(obj.script, function(success){
+			
+			NProgress.done();
 			if (success) {
 				console.log('OK');
 				web[obj.prop].initModule(jqueryMap.$mainContent);	
